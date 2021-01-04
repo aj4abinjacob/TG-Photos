@@ -7,13 +7,14 @@ I will be also sharing an xml file which can be used in an android phone having 
 # Steps
 1 .Run the initial setup
 <br>
- You will be adding token and your chatid here.
+you will be adding token and your chatid here.
 <br>
 2. Run the folder settup
 <br>
- Add the folders to be uploaded
+add the folders to be uploaded
 <br>
 3. Run the scheduleScript in terminal to start uploading 
+
 
 # Features 
 Unlimited orginal quality photo upload
