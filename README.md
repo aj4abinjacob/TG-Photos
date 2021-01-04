@@ -7,4 +7,5 @@ I will be also sharing an xml file which can be used in an android phone having 
 
 # Dependencies
 requests (https://github.com/requests/requests) 
-Tasker, for using this in android. 
+Tasker App (if you want to use in android)
+
