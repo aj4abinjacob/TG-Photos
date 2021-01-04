@@ -1,0 +1,8 @@
+1.Search for BotFather in telegram'
+2.Send "/start" and then "/newbot" to BotFather'
+3.Then choose a name and username for your bot'
+4.You will get a message with bot token\n'
+5.Now search for your bot in telegram with the username and send "\start" and a "Hi"
+6.Go to https://api.telegram.org/bot<your bot token>/getUpdates
+7.Find "id" under from make sure the username is yours
+8.copy and paste both the token and the chatid in tasker task
