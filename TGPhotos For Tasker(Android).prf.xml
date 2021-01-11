@@ -1,11 +1,11 @@
 <TaskerData sr="" dvi="1" tv="5.10.1">
-	<Profile sr="prof29" ve="2">
-		<cdate>1609734166803</cdate>
-		<edate>1610269047864</edate>
+	<Profile sr="prof32" ve="2">
+		<cdate>1610284516072</cdate>
+		<edate>1610359452467</edate>
 		<flags>8</flags>
-		<id>29</id>
-		<mid0>32</mid0>
-		<nme>TGPhotos</nme>
+		<id>32</id>
+		<mid0>29</mid0>
+		<nme>TG Photos</nme>
 		<Event sr="con0" ve="2">
 			<code>222</code>
 			<pri>0</pri>
@@ -13,30 +13,45 @@
 			<Str sr="arg1" ve="3">Create</Str>
 		</Event>
 	</Profile>
-	<Task sr="task32">
-		<cdate>1609734169647</cdate>
-		<edate>1610269047864</edate>
-		<id>32</id>
+	<Task sr="task29">
+		<cdate>1610277711956</cdate>
+		<edate>1610359452467</edate>
+		<id>29</id>
+		<nme>Telegram Uploader 2</nme>
 		<pri>100</pri>
+		<Kid sr="Kid">
+			<launchID>34</launchID>
+			<pkg>com.abin.tgphotos</pkg>
+			<vTarg>28</vTarg>
+			<vnme>1.0</vnme>
+			<vnum>2</vnum>
+		</Kid>
 		<Action sr="act0" ve="7">
-			<code>412</code>
-			<Str sr="arg0" ve="3">DCIM/Camera</Str>
-			<Str sr="arg1" ve="3"/>
+			<code>35</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="1"/>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="6"/>
-			<Str sr="arg5" ve="3">%FILE</Str>
+			<Int sr="arg4" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%WIFII</lhs>
+					<op>2</op>
+					<rhs>*CONNECTION*</rhs>
+				</Condition>
+			</ConditionList>
 		</Action>
 		<Action sr="act1" ve="7">
-			<code>548</code>
-			<Str sr="arg0" ve="3">%FILE(&lt;)</Str>
-			<Int sr="arg1" val="0"/>
+			<code>417</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">Tasker/uploaded.txt</Str>
+			<Str sr="arg1" ve="3">%uploadedPhotos</Str>
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>547</code>
 			<label>Set bot token</label>
-			<Str sr="arg0" ve="3">%TOKEN</Str>
-			<Str sr="arg1" ve="3">1400534340:AAG-FivnQUEt0nEE6zw5_9QYwY8ExMBMnro</Str>
+			<Str sr="arg0" ve="3">%telegramapi</Str>
+			<Str sr="arg1" ve="3">Enter your bot token here</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
@@ -45,14 +60,44 @@
 		<Action sr="act3" ve="7">
 			<code>547</code>
 			<label>Set chat id</label>
-			<Str sr="arg0" ve="3">%CHAT_ID</Str>
-			<Str sr="arg1" ve="3">400715402</Str>
+			<Str sr="arg0" ve="3">%chatid</Str>
+			<Str sr="arg1" ve="3">Enter your chat id</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 			<Int sr="arg5" val="3"/>
 		</Action>
 		<Action sr="act4" ve="7">
+			<code>412</code>
+			<Str sr="arg0" ve="3">DCIM/Camera</Str>
+			<Str sr="arg1" ve="3">*.jpg</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="7"/>
+			<Str sr="arg5" ve="3">%photos</Str>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%Photo</Str>
+			<Str sr="arg1" ve="3">%photos()</Str>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%uploadedPhotos</lhs>
+					<op>5</op>
+					<rhs>%Photo</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%Photo</Str>
+			<Str sr="arg1" ve="3">/</Str>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
 			<code>339</code>
 			<label>Upload</label>
 			<Bundle sr="arg0">
@@ -76,19 +121,27 @@ The size of the response in bytes&lt;/_array_net.dinglisch.android.tasker.RELEVA
 			<Int sr="arg1" val="1"/>
 			<Int sr="arg10" val="0"/>
 			<Int sr="arg11" val="0"/>
-			<Str sr="arg2" ve="3">https://api.telegram.org/bot%TOKEN/senddocument</Str>
+			<Str sr="arg2" ve="3">https://api.telegram.org/bot%telegramapi/senddocument</Str>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
-			<Str sr="arg5" ve="3">chat_id=%CHAT_ID</Str>
-			<Str sr="arg6" ve="3">document:%FILE(&lt;)</Str>
+			<Str sr="arg5" ve="3">chat_id=%chatid&amp;caption=%Photo(&lt;)</Str>
+			<Str sr="arg6" ve="3">document:%Photo</Str>
 			<Str sr="arg7" ve="3"/>
-			<Int sr="arg8" val="60"/>
+			<Int sr="arg8">
+				<var>500</var>
+			</Int>
 			<Int sr="arg9" val="0"/>
 		</Action>
-		<Action sr="act5" ve="7">
-			<code>548</code>
-			<Str sr="arg0" ve="3">%FILE(&lt;) uploaded</Str>
-			<Int sr="arg1" val="0"/>
+		<Action sr="act9" ve="7">
+			<code>410</code>
+			<Str sr="arg0" ve="3">Tasker/uploaded.txt</Str>
+			<Str sr="arg1" ve="3">%Photo</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="1"/>
 		</Action>
+		<Img sr="icn" ve="2">
+			<cls>com.google.android.apps.photos.home.HomeActivity</cls>
+			<pkg>com.google.android.apps.photos</pkg>
+		</Img>
 	</Task>
 </TaskerData>
