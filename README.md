@@ -1,6 +1,6 @@
 # TGPhotos
 Google photos alternative using telegram
-Since free use of google photos is comming to an end, i needed an alternative so i ended up using telegram bot api to create a free cloud like enviornment.
+Since free use of google photos is comming to an end, i needed an alternative so i ended up using telegram bot api to create a free cloud like environment.
 The python script, currently works on linux.
 I will be also sharing an xml file which can be used in an android phone having tasker installed to upload to telegram in the same way.
 
