@@ -5,7 +5,7 @@ The python script, currently works on linux.
 I will be also sharing an xml file which can be used in an android phone having tasker installed to upload to telegram in the same way.
 
 # Steps
-1 .Run the initial setup
+1. Run the initial setup
 <br>
 you will be adding token and your chatid here.
 <br>
