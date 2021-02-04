@@ -18,7 +18,7 @@ you will be asked to enter your phone number and otp code during the first uploa
 ## Usage
 "python3 TGPhotos.py --startupload" to start uploading all the files in the folders paths you have entered
 <br>
-"python3 TGPhotos.py --mupload /fullpathtofile.jpg" to quickly upload a file
+"python3 TGPhotos.py --mupload /full/path/to/file.jpg" to quickly upload a file
 <br>
 "python3 TGPhotos.py --download filename.png" to download file based on it's name
 <br>
@@ -26,6 +26,9 @@ you will be asked to enter your phone number and otp code during the first uploa
 <br>
 "python3 TGPhotos.py --list" to view all the files that have been uploaded
 <br>
+You can use bash aliases to quickly access the program<br>
+"nano ~/.bashrc"<br>
+"alias TGPhotos="python3 /home/user/TGPhotos/TGPhotos.py"
 
 
 ## Features 
