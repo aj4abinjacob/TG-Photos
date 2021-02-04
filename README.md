@@ -5,15 +5,23 @@ The python script, currently works on linux.
 I will be also sharing an xml file which can be used in an android phone having tasker installed to upload to telegram in the same way.
 
 ## Steps
-1.Run the initial setup
+1.Run "python3 config.py" in terminal
 <br>
-you will be adding token and your chatid here.
+config,logs and TGDownloads will be created in your current working directory
 <br>
-2.Run the folder settup
+2.Add your api_id,api_hash,bot_username and bot_token in config.txt in config folder
 <br>
-add the folders to be uploaded
+3.Run "python3 TGPhotos.py --startupload" after adding folder paths in folderpaths.txt in confg folder
 <br>
-3.Run the scheduleScript in terminal to start uploading 
+you will be asked to enter your phone number and otp code during the first upload
+<br>
+
+## Usage
+"python3 TGPhotos.py --startupload" to start uploading all the files in the folders paths you have entered
+"python3 TGPhotos.py --mupload /fullpathtofile.jpg" to quickly upload a file
+"python3 TGPhotos.py --download filename.png" to download file based on it's name
+"python3 TGPhotos.py --date" to download files based on date
+"python3 TGPhotos.py --list" to view all the files that have been uploaded
 
 
 ## Features 
@@ -21,6 +29,8 @@ Unlimited orginal quality photo upload
 
 ## Dependencies
 Telegram
+<br>
+Telethon
 <br>
 requests (https://github.com/requests/requests) 
 <br>
