@@ -12,7 +12,7 @@ config,logs and TGDownloads will be created in your current working directory
 <br>
 3.Run "python3 TGPhotos.py --startupload" after adding folder paths in folderpaths.txt in confg folder
 <br>
-you will be asked to enter your phone number and otp code during the first upload
+you will be asked to enter your phone number and otp code during the first upload and it will start to upload after successful login
 <br>
 
 ## Usage
@@ -29,11 +29,11 @@ you will be asked to enter your phone number and otp code during the first uploa
 You can use bash aliases to quickly access the program<br>
 "nano ~/.bashrc"<br>Then add the following code to the end<br>
 "alias TGPhotos="python3 /home/user/TGPhotos/TGPhotos.py"<br>
-press ctrl+o and then ctrl+x<br>Then enter ". ~/.bashrc" in the terminal
+press ctrl+o and then ctrl+x<br>Then enter ". ~/.bashrc" in the terminal.
 
 
 ## Features 
-Unlimited orginal quality photo upload
+Unlimited orginal quality photo upload.
 
 ## Dependencies
 Telegram
