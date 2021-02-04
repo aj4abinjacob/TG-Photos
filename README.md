@@ -38,5 +38,5 @@ Telethon (https://github.com/LonamiWebs/Telethon)
 <br>
 requests (https://github.com/requests/requests) 
 <br>
-Tasker App (if you want to use in android)
+Tasker App (if you want to use in android) : The tasker profile uses bot api to upload file so you need to go to your bot chat if you want to download the file.
 
