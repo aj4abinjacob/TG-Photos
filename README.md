@@ -34,7 +34,7 @@ Unlimited orginal quality photo upload
 ## Dependencies
 Telegram
 <br>
-Telethon
+Telethon (https://github.com/LonamiWebs/Telethon)
 <br>
 requests (https://github.com/requests/requests) 
 <br>
