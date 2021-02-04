@@ -25,7 +25,7 @@ you will be asked to enter your phone number and otp code during the first uploa
 "python3 TGPhotos.py --date" to download files based on date
 <br>
 "python3 TGPhotos.py --list" to view all the files that have been uploaded
-<br><br>
+<br>You can also just run the program to see a list of options.<br>
 You can use bash aliases to quickly access the program<br>
 "nano ~/.bashrc"<br>Then add the following code to the end<br>
 "alias TGPhotos="python3 /home/user/TGPhotos/TGPhotos.py"<br>
