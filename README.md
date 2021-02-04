@@ -9,7 +9,7 @@ I will be also sharing an xml file which can be used in an android phone having 
 config,logs and TGDownloads will be created in your program directory
 <br>
 2.Add your api_id,api_hash,bot_username and bot_token in config.txt in config folder<br>
-<p>
+<pre>
 For api id and api_hash 
 ***********************
     Go to https://my.telegram.org, under API Development
@@ -21,7 +21,7 @@ For both bot user name and bot token
     Send "/start" and then "/newbot" to BotFather
     Then choose a name and username for your bot
     You will get a message with bot token, please copy your bot token
-    Now search for your bot in telegram with the username and send "\start" and a "Hi"<p>
+    Now search for your bot in telegram with the username and send "\start" and a "Hi"</pre>
 <br>
 3.Run "python3 TGPhotos.py --startupload" after adding folder paths in folderpaths.txt in confg folder
 <br>
