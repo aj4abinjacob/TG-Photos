@@ -18,10 +18,15 @@ you will be asked to enter your phone number and otp code during the first uploa
 
 ## Usage
 "python3 TGPhotos.py --startupload" to start uploading all the files in the folders paths you have entered
+<br>
 "python3 TGPhotos.py --mupload /fullpathtofile.jpg" to quickly upload a file
+<br>
 "python3 TGPhotos.py --download filename.png" to download file based on it's name
+<br>
 "python3 TGPhotos.py --date" to download files based on date
+<br>
 "python3 TGPhotos.py --list" to view all the files that have been uploaded
+<br>
 
 
 ## Features 
