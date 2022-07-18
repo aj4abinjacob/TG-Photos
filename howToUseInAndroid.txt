@@ -14,6 +14,6 @@
 
     if id has not appeared, send a message to your bot again and refresh the webpage
 
-    Copy and paste both the token and the chatid in the task in tasker https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_IN&gl=US after importing the task
+    Copy and paste both the token and the chatid in the task in tasker after importing the task
     
     If you encounter file not found error select "continue after error" inside the first task
