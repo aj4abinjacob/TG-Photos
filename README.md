@@ -1,4 +1,4 @@
-# TGPhotos
+# TG Photos
 Google photos alternative using telegram.<br>
 Since free use of google photos is comming to an end, i needed an alternative so i ended up using telegram and it's features to create a free cloud like environment.You can only upload and download photos now. Since i use the botapi to download files and the limit of bot api file download is 50mb i decided not to add videos upload.  
 I will be also sharing an xml file which can be used in an android phone having tasker installed to upload to telegram but please note that you can only download.
